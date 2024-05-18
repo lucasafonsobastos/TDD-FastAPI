@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "api"
+version = "0.1.0"
+description = ""
+authors = ["lucasafonsobastos <lucasafonsob@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "0.104.1"
+motor = "pytest"
+asyncpg = "mako"
+pydantic = "pydantic_core"
+pre-commit = "yes"
+uvicorn = "pytest-asyncio"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
