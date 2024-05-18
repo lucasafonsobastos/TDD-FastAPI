@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "api"
+name = "tdd-fastapi"
 version = "0.1.0"
 description = ""
 authors = ["lucasafonsobastos <lucasafonsob@hotmail.com>"]
@@ -7,12 +7,25 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-fastapi = "0.104.1"
-motor = "pytest"
-asyncpg = "mako"
-pydantic = "pydantic_core"
-pre-commit = "yes"
-uvicorn = "pytest-asyncio"
+fastapi = "^0.111.0"
+uvicorn = "^0.29.0"
+pydantic = "^2.7.1"
+pydantic-settings = "^2.2.1"
+motor = "^3.4.0"
+pytest = "^8.2.0"
+pytest-asyncio = "^0.23.6"
+pre-commit = "^3.7.1"
+httpx = "^0.27.0"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+addopts = [
+  "--strict-config",
+  "--strict-markers",
+  "--ignore=docs_src",
+]
+xfail_strict = true
+junit_family = "xunit2"
 
 
 [build-system]
