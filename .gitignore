@@ -1,0 +1,5 @@
+.docker
+
+tdd_fastapi/Include/*
+tdd_fastapi/Lib/*
+tdd_fastapi/Scripts/*
